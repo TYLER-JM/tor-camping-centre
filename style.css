@@ -1,0 +1,126 @@
+:root {
+  font-size: 1em;
+}
+@media (max-width: 1000px) {
+  :root {
+    font-size: 0.895em;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    font-size: calc(0.5em + 1vw);
+  }
+}
+@media (max-width: 415px) {
+  img[src="welcome.jpg"] {
+    width: 100%;
+  }
+}
+
+
+.page-wrap {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-nav {
+  width: 100%;
+}
+.top-nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+}
+.bottom-nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  display: inline;
+  padding-left: 5px;
+}
+.top-nav a {
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(to right, #100401, #cb3202, white);
+  font-weight: 700;
+  box-shadow: 1px 1px .1em black;
+  text-shadow: 1px 1px 1px black;
+  min-width: 2em;
+  padding: .5em;
+  margin: .5em;
+}
+.top-nav a:hover {
+  background-image: linear-gradient(to right, white, blue, black);
+  color: red;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+.contact div {
+  width: 50%;
+}
+.contact p {
+  color: #336699;
+  font-size: .8em;
+  margin: 0;
+  font-weight: bold;
+}
+.contact a {
+  font-size: .8em;
+  font-weight: bold;
+}
+.page-wrap > div {
+  border-bottom: 2px solid #666;
+  padding-bottom: 1.2em;
+}
+.block-two {
+  display: grid;
+  grid-template-rows: 10% 45% 45%;
+  grid-template-columns: 1fr 1fr;
+}
+.block-two h2 {
+  grid-area: 1/1/2/3;
+  color: #336699;
+  margin: .3em 0;
+  font-size: 1.1em;
+  text-align: center;
+}
+.block-two p {
+  font-weight: 600;
+  font-size: .9em;
+  margin: 1em 1.5em 0 0; 
+}
+.block-two a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+}
+.b2a {
+  grid-area: 2/1/3/2;
+}
+.b2b {
+  grid-area: 3/1/4/2;
+}
+.b2c {
+  grid-area: 2/2/3/3;
+}
+.b2d {
+  grid-area: 3/2/4/3;
+}
+.block-three {
+  display: flex;
+  flex-direction: column;
+}
+.block-three p {
+  font-size: .7em;
+}
+.block-three img {
+  align-self: center;
+}
+
